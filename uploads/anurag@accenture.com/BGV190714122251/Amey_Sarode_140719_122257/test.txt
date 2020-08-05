@@ -1,0 +1,689 @@
+Wordpress password: EOJJbd!D!*SK7vykN!
+
+
+
+			<?php while ( have_posts() ) : the_post(); ?>
+                <?php get_template_part( 'content', 'page' ); ?>
+                <?php
+                //If comments are open or we have at least one comment, load up the comment template
+                	if ( comments_open() || '0' != get_comments_number() )
+                    	comments_template();
+                ?>
+            <?php endwhile; // end of the loop. ?>
+/*==================================================*/
+window.location='http://wordpress-testsite.dev/page-2';
+
+info.iotprojects@gmail.com
+iot.info
+
+
+/*================================ Contact form ============================================== */
+<div class="contain">  
+  <form id="contact" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <h3>Connect with out Team</h3>
+    <h4>Give us your valuable Feedback</h4>
+    <font><?php echo $error; ?></font>
+    <fieldset>
+      <input placeholder="Your name" name="Name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" name="Email" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" name="phone" type="tel" tabindex="3" >
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site (optional)" type="url" name="web" tabindex="4" >
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." name="message" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" name="contact" data-submit="...Sending">Submit</button>
+    </fieldset>
+    <p class="copy">Designed by <a href="https://mittbi.org" target="_blank" title="MIT TBI">MTI TBI</a></p>
+  </form>
+  </div>
+/*==================================================================================================*/
+ewd-feup-submit feup-pure-button feup-pure-button-primary
+in-content-primary-button-background: #0095dd;
+/*================================== CHANNELS MIT COE =============================================================*/
+
+VOLTAGE MONITORING:
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/126367/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+
+CURRENT MONITORING:
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/126367/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+
+VEHICLE COUNT:
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/126367/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+
+GAS MONITORING:
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/126367/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+
+MAP:
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/126367/maps/channel_show"></iframe>
+
+
+
+
+/*================================== CHANNELS MIT =============================================================*/
+
+VOLTAGE MONITORING:
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/123568/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=MIT%2CPune&type=line"></iframe>
+
+CURRENT MONITORING:
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/123568/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=MIT%2C+Pune&type=line"></iframe>
+
+VEHICLE COUNT:
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/123568/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=MIT%2C+Pune&type=line"></iframe>
+
+GAS MONITORING:
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/123568/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=MIT%2C+Pune&type=line"></iframe>
+
+MAP:
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/123568/maps/channel_show"></iframe>
+
+/*================================ CHANNELS MIT AOE ==============================================================*/
+
+VOLTAGE MONITORING:
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/126362/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+
+
+CURRENT MONITORING:
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/126362/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+
+VEHICLE COUNT:
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/126362/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+
+GAS MONITORING:
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/126362/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+
+MAP:
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/126362/maps/channel_show"></iframe>
+
+
+//========================================================= Code =======================================================================//
+
+<script  type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript'>
+  $(document).ready(function(){
+		$('#mitcoe').hide();
+    		$('#mit').hide();
+    		$('#mitaoe').hide();
+    		$('#page-graph1-1').hide();
+    		$('#page-graph1-2').hide();
+    		$('#page-graph1-3').hide();
+    		$('#message-box').hide();
+    		$('#snap').hide();
+    		$('#reload').hide();
+    	});
+
+    // Change function
+
+    function change() {
+    var selectBox = document.getElementById('college');
+    var selected = selectBox.options[selectBox.selectedIndex].value;
+
+    if(selected === '1'){
+        $('#mitcoe').show();
+    }
+    else if(selected === '2') {
+        $('#mit').show();
+    }
+    else if(selected === '3') {
+    	$('#mitaoe').show();
+    }
+    };
+
+    function change_mitcoe() {
+        var selectBox = document.getElementById('mitcoe1');
+        var choice = selectBox.options[selectBox.selectedIndex].value;
+        if(choice === '1')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-1').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mitcoe').hide();
+
+    		});
+        }
+        if(choice === '2')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-1').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mitcoe').hide();
+    		});
+        }
+        if(choice === '3')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-1').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mitcoe').hide();
+    		});
+        }
+        if(choice === '4')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-1').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mitcoe').hide();
+    		});
+        }
+    };
+
+    function change_mit() {
+        var selectBox = document.getElementById('mit1');
+        var choice = selectBox.options[selectBox.selectedIndex].value;
+        if(choice === '1')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-2').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mit').hide();
+    		});
+        }
+        if(choice === '2')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-2').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mit').hide();
+    		});
+        }
+        if(choice === '3')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-2').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mit').hide();
+    		});
+        }
+        if(choice === '4')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-2').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mit').hide();
+    		});
+        }
+    };
+
+    function change_mitaoe() {
+    	var selectBox = document.getElementById('mitaoe1');
+        var choice = selectBox.options[selectBox.selectedIndex].value;
+        if(choice === '1')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-3').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mitaoe').hide();
+    		});
+        }
+        if(choice === '2')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-3').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mitaoe').hide();
+    		});
+        }
+        if(choice === '3')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-3').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mitaoe').hide();
+    		});
+        }
+        if(choice === '4')
+        {
+        	$('#snap').show();
+        	document.getElementById('snap').addEventListener('click', function(){
+
+        		$('#page-graph1-3').show();
+        		$('#reload').show();
+    			$('#option1').hide();
+    			$('#snap').hide();
+    			$('#mitaoe').hide();
+    		});
+        }
+        };
+
+
+    </script>
+    <script>
+
+    </script>
+    
+  <div class='clear'></div>
+      
+      
+      <div class='page1' >
+
+      <h1> Smart Energy Monitoring System </h1>
+      <br/>
+      <div class='shades'>
+
+      <h2 style='font-size:20px;margin:0 40px 0 60px;color:#FF0000;'> Energy monitoring and targeting is an energy efficiency technique based on Hardware and Software that connects with energy resources to provide a defined baseline of energy consumption.</h2>
+
+      <?php //=================================== PAGE DIV==========================================================//  ?>
+      <div id='page-list1'>
+      <form >
+      <ul>
+      <li id='option1'>
+      <label for='College' class='college'>Select the College:</label>
+      <select name='College' id='college' onchange='change();' autocomplete='off'>
+      <option value='' selected='selected'></option>
+      <option value='1'> MITCOE </option>
+      <option value='2'> MIT </option>
+      <option value='3'> MITAOE</option>
+      </select>
+      </li>
+
+      <li id='mitcoe'>
+      <label for='MITCOE'>Select the Building:</label>
+      <select name='MITCOE Building' id='mitcoe1' onchange='change_mitcoe();' autocomplete='off'>
+      <option value='' selected='selected'></option>
+      <option value='1'>MITCOE-Building A </option>
+      <option value='2'>MITCOE-Building B </option>
+      <option value='3'>MITCOE-Building C </option>
+      <option value='4'>MITCOE-Building D </option>
+
+      </select>
+      </li>
+
+      <li id='mit'>
+      <label for='MIT'>Select the Building:</label>
+      <select name='MIT Building' id='mit1' onchange='change_mit();' autocomplete='off'>
+      <option value='' selected='selected'></option>
+      <option value='1'>MIT-Building A </option>
+      <option value='2'>MIT-Building B </option>
+      <option value='3'>MIT-Building C </option>
+      <option value='4'>MIT-Building D </option>
+      </select>
+      </li>
+
+     <li id='mitaoe'>
+     <label for='MIT Alandi'>Select the Building:</label>
+      <select name='MIT Alandi Building' id='mitaoe1' onchange='change_mitaoe();' autocomplete='off'>
+      <option value='' selected='selected'></option>
+      <option value='1'>MIT Alandi-Building A </option>
+      <option value='2'>MIT Alandi-Building B </option>
+      <option value='3'>MIT Alandi-Building C </option>
+      <option value='4'>MIT Alandi-Building D </option>
+      </select>
+      </li>
+      </ul>
+
+	<input type='button' value='Display Result' onClick='display()' class='snap' id='snap' >
+	</form>
+
+      </div>
+      <br/>
+
+      <?php //=================================== PAGE DIV 1==========================================================//  ?>
+      <div id='page-graph1-1' class='grid' >
+      <div class='col-1-3' >
+      <font style='font-size:15px;'>Voltage Monitor:</font>
+      <br/>
+      <iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126367/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line'></iframe>
+      <br/>
+      </div>
+      <div class='col-2-3' >
+      <font style='font-size:15px;'>Current Monitor:</font>
+      <br/>
+      <iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126367/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line'></iframe>
+      <br/>
+      </div>
+      <div class='col-3-3' >
+      <font style='font-size:15px;'>Location Map:</font>
+     	<br/>
+     	<iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126367/maps/channel_show'>
+     	</iframe>
+      </div>
+
+      <div class='col-4-4' >
+      <font style='font-size:15px;'> Feedback Box: </font>
+      <br/>
+      <div style='border:1px solid #DDD;background-color:#444;width:450px;height:260px;'>
+      </div>
+      </div>
+     
+      </div>
+      <?php //=================================== PAGE DIV 2==========================================================//  ?>
+      <div id='page-graph1-2' class='grid'>
+      <div class='col-1-3'>
+      <font style='font-size:15px;'>Voltage Monitor:</font>
+      <br/>
+      <iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/123568/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=MIT%2CPune&type=line'></iframe>
+      <br/>
+      </div>
+
+      <div class='col-2-3'>
+      <font style='font-size:15px;'>Current Monitor:</font>
+      <br/>
+      <iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/123568/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=MIT%2C+Pune&type=line'></iframe>
+      <br/>
+      </div>
+      <div class='col-3-3'>
+      <font style='font-size:15px;'>Location Map:</font>
+     	<br/>
+     	<iframe width='450' height='260' style='border:1px solid #cccccc;' src='https://thingspeak.com/channels/123568/maps/channel_show'>
+     	</iframe>
+     	</div>
+
+      <div  class='col-4-4' >
+      <font style='font-size:15px;'> Feedback Box: </font>
+      <br/>
+      <div style='border: 1px solid #DDD;background-color:#444;width:450px;height:260px;'>
+      </div>
+      </div>
+      
+      </div>
+      <?php //=================================== PAGE DIV 3==========================================================//  ?>
+      <div id='page-graph1-3' class='grid' >
+      
+      <div class='col-1-3'>
+      <font style='font-size:15px;' >Voltage Monitor:</font>
+      <br/>
+      <iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126362/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line'></iframe>
+
+      <br/>
+      </div>
+      
+      <div class='col-2-3'>
+      <font style='font-size:15px;' >Current Monitor:</font>
+      <br/>
+      <iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126362/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line'></iframe>
+
+      <br/>
+      </div>
+      
+      <div class='col-3-3'>
+      <font style='font-size:15px;'>Location Map:</font>
+     	<br/>
+     	<iframe width='450' height='260' style='border: 1px solid #cccccc; src='https://thingspeak.com/channels/126362/maps/channel_show'></iframe>
+      </div>
+
+      <div class='col-4-4' >
+      <font style='font-size:15px;'> Feedback Box: </font>
+      <br/>
+      <div style='border-style:1px solid #DDD;background-color:#444;width:450px;height:260px;'>
+      </div>
+      </div>
+      
+      </div>
+      
+     
+      <div class='clear'></div>
+      <br/>
+      <input type='button' value='Back to Main Page' onClick='window.location='http://wordpress-testsite.dev/page-1';' class='reload' id='reload' >
+      <br/>
+      <br/>
+      <br/>
+      </div>
+
+    </div>
+    <div class='clear'></div>
+//========================================================== Page 2 ====================================================================//
+<script type='text/javascript'>
+  $(document).ready(function(){
+    		$('#page-graph2-1').hide();
+    		$('#page-graph2-2').hide();
+    		$('#page-graph2-3').hide();
+    		$('#reload').hide();
+    	});
+    	
+    function change() {
+    var selectBox = document.getElementById('area');
+    var selected = selectBox.options[selectBox.selectedIndex].value;
+    
+    if(selected === '1'){
+    	$('#option2').hide();
+        $('#page-graph2-1').show();
+        $('#reload').show();
+    }
+    else if(selected === '2') {
+    	 $('#option2').hide();
+         $('#page-graph2-2').show();
+         $('#reload').show();
+    }
+    else if(selected === '3') {
+    	 $('#option2').hide();
+    	 $('#page-graph2-3').show();
+    	 $('#reload').show();
+    }
+    };
+    </script>
+    
+    <div class='page2'>
+      	<h1> Smart Gas Monitoring System </h1>
+      	<br/>
+      	
+      	      
+      	
+      	<div id='page-list2'>
+      	<h2 style='font-size:20px;margin:0 50px 0 50px;color:#FF0000;'> The Gas Monitoring allows to detect the presence of gases in an area, often as part of a safety system. This type of equipment is used to detect a gas leak and give a sound alarm to operators in the area where the leak has occurred.  </h2>
+      	
+      	<ul>
+      	<li id='option2'>
+      	<label for='Area' class='area'>Select the College:</label>
+      	<select name='Area' id='area' onchange='change();' autocomplete='off'>
+      	<option value='' selected='selected'></option>
+      	<option value='1'> MITCOE Canteen </option>
+      	<option value='2'> MIT Canteen </option>
+      	<option value='3'> MITAOE Coke Station</option>
+      	</select>
+      	</li>
+      	</ul>
+      	
+      	
+      
+      	</div>
+      
+      	<div id='page-graph2-1' class='grid'>
+      	<div class='col-1-3'>
+      	<font style='font-size:15px;'>Gas Leakage:</font>
+      	<br/>
+      	<iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126367/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line'></iframe>
+      	<br/>
+      	</div>
+      	<div class='col-2-3'>
+      	<font style='font-size:15px;'>Location Map:</font>
+     	<br/>
+     	<iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126367/maps/channel_show'>
+     	</iframe>
+     	</div>
+      	</div>
+      	
+      	<div id='page-graph2-2' class='grid'>
+      	<div class='col-1-3'>
+      	<font style='font-size:15px;'>Gas Leakage:</font>
+      	<br/>
+      	<iframe width='450' height='260' style='border: 1px solid #cccccc; ' src='https://thingspeak.com/channels/123568/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=MIT%2C+Pune&type=line'></iframe>
+      	<br/>
+      	</div>
+      	<div class='col-2-3'>
+      	<font style='font-size:15px;'>Location Map:</font>
+     	<br/>
+     	<iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/123568/maps/channel_show'>
+     	</iframe>
+     	</div>
+      	</div>
+      	
+      	<div id='page-graph2-3' class='grid'>
+      	<div class='col-1-3'>
+      	<font style='font-size:15px;'>Gas Leakage:</font>
+      	<br/>
+      	<iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126362/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line'></iframe>
+      	<br/>
+      	</div>
+      	<div class='col-2-3'>
+      	<font style='font-size:15px;'>Location Map:</font>
+     	<br/>
+     	<iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126362/maps/channel_show'></iframe>
+      	</div>
+      	</div>
+      
+      	<div class='clear'></div>
+      	<br/>
+      	<input type='button' value='Back to Main Page' onClick='window.location.reload()' class='reload' id='reload' >
+      	<br/>
+      	<br/>
+  	</div>     
+
+//================================================== Page 3 =========================================================================//
+<script type='text/javascript'>
+  $(document).ready(function(){
+    		$('#page-graph3-1').hide();
+    		$('#page-graph3-2').hide();
+    		$('#page-graph3-3').hide();
+    		$('#reload').hide();
+    	});
+    	
+    function change() {
+    var selectBox = document.getElementById('region');
+    var selected = selectBox.options[selectBox.selectedIndex].value;
+    
+    if(selected === '1'){
+    	$('#option3').hide();
+        $('#page-graph3-1').show();
+        $('#reload').show();
+    }
+    else if(selected === '2') {
+    	 $('#option3').hide();
+         $('#page-graph3-2').show();
+         $('#reload').show();
+    }
+    else if(selected === '3') {
+    	 $('#option3').hide();
+    	 $('#page-graph3-3').show();
+    	 $('#reload').show();
+    }
+    };
+    </script>
+    
+    <div class='page3'>
+      	<h1> Vehicle Monitoring System </h1>
+      	<br/>
+      	
+      	
+      	<div id='page-list3'>
+      	<h2 style='font-size:20px;margin:0 50px 0 50px;color:#FF0000;'> An IVMS (In Vehicle Monitoring System) combines the installation of an electronic device in a vehicle, or fleet of vehicles, with purpose-designed computer software at least at one operational base to enable the owner or a third party to track the vehicle's location, collecting data in the process from the field and deliver it to the base of operation. </h2>
+      	 
+      	<ul>
+      	<li id='option3' >
+      	<label for='Parking Region' class='region'>Select the Region:</label>
+      	<select name='region' id='region' onchange='change();' autocomplete='off'>
+      	<option value='' selected='selected'></option>
+      	<option value='1'> MITCOE</option>
+      	<option value='2'> MIT</option>
+      	<option value='3'> MIT AOE</option>
+      	</select>
+      	</li>
+      	</ul>
+      	
+      	</div>
+      
+     	<div id='page-graph3-1' class='grid'>
+     	<div class='col-1-3'>
+     	<font style='font-size:15px;'>Vehicle Count:</font>
+     	 <br/>
+     	 <iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126367/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line'></iframe>
+     	 <br/>
+     	 </div>
+     	 <div class='col-2-3'>
+     	 <font style='font-size:15px;'>Location Map:</font>
+     	<br/>
+     	<iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126367/maps/channel_show'>
+     	</iframe>
+     	</div>
+     	</div>
+     	
+     	<div id='page-graph3-2' class='grid'>
+     	<div class='col-1-3'>
+     	<font style='font-size:15px;'>Vehicle Count:</font>
+     	 <br/>
+     	<iframe width='450' height='260' style='border: 1px solid #cccccc; ' src='https://thingspeak.com/channels/123568/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=MIT%2C+Pune&type=line'></iframe>
+     	<br/>
+     	</div>
+     	<div class='col-2-3'>
+     	<font style='font-size:15px;' >Location Map:</font>
+     	<br/>
+     	<iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/123568/maps/channel_show'>
+     	</iframe>
+     	</div>
+     	</div>
+     	
+     	<div id='page-graph3-3' class='grid'>
+     	<div class='col-1-3'>
+     	<font style='font-size:15px;'>Vehicle Count:</font>
+     	 <br/>
+     	<iframe width='450' height='260' style='border: 1px solid #cccccc; ' src='https://thingspeak.com/channels/126362/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line'></iframe>
+     	<br/>
+     	</div>
+     	<div class='col-2-3'>
+     	<font style='font-size:15px;'>Location Map:</font>
+     	<br/>
+     	<iframe width='450' height='260' style='border: 1px solid #cccccc;' src='https://thingspeak.com/channels/126362/maps/channel_show'></iframe>
+     	</div>
+     	</div>
+     	
+     	 <div class='clear'></div>
+     	 <input type='button' value='Back to Main Page' onClick='window.location='http://wordpress-testsite.dev/page-3';' class='reload' id='reload' >
+     	 <br/>
+     	 <br/>
+     	 
+    	</div>

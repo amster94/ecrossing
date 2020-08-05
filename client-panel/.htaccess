@@ -1,0 +1,53 @@
+# Apache2.4 configuring at ecrossings
+
+<filesMatch ".(jpg|jpeg|png|gif|ico|css|js)$">
+#Header set Cache-Control "no-cache, must-revalidate"
+</filesMatch>
+
+ Options -Indexes
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
+
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+
+#Force non-www:
+
+RewriteRule ^request/(.*)$ view-request.php?request_id=$1  [NC,L]
+RewriteRule ^employee/(.*)$ upload-employee-data.php?employee_id=$1  [NC,L]
+RewriteRule ^download-request/(.*)$ view-request-download.php?request_id=$1  [NC,L]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+# Extra Security Headers
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+	Header always append X-Frame-Options SAMEORIGIN
+	Header set X-Content-Type-Options nosniff
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+	RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+	RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+	RewriteRule .* index.html [F,L]
+</IfModule>
+
+#enable gzip compression
+<ifModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+mod_gzip_item_include handler ^cgi-script$
+mod_gzip_item_include mime ^text/.*
+mod_gzip_item_include mime ^application/x-javascript.*
+mod_gzip_item_exclude mime ^image/.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+

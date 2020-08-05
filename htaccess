@@ -1,0 +1,9 @@
+
+RewriteEngine on
+# <filesMatch ".(jpg|jpeg|png|gif|ico|css|js)$">
+# Header set Cache-Control "no-cache, must-revalidate"
+RewriteRule ^/?product/([a-zA-Z_0-9-]+) product.php?productid=$1
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

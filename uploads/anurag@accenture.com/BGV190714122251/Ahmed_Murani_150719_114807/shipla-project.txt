@@ -1,0 +1,63 @@
+
+
+LAMP
+LINUX APACHE MYSQL PHP
+
+Client 
+
+- Multiple Employees - Gray Red Orange Green
+- Multiple Cases - Update Status the Employee - In progress Complete
+- Multiple Data - Jpeg,PDF - 100 MB
+
+
+Our Side
+
+- Seeing Employee - Update Red Orange Green
+
+- Multiple Case - Update the status for employee
+
+- Zip of all data
+
+
+- Excel Report of particular request 4 fields
+
+- Finish request button
+
+- Unfinished Button for unfinished Request
+
+- Download zip according to the request
+
+
+
+Client
+
+Dashboard
+
+Case Input - Name of the case - Page
+Employee Input - Name of the Employee - Page
+Multiple Data - All the files uploaded for the employee - Page
+
+
+Case Status Page - All the Cases with Download - Page
+Employee Status - Inside the selected case - Page
+Raise Query
+
+Our Side
+
+Dashboard 
+
+Case Status Page - All the Cases - Page
+Employee Status - Inside the selected case with Download - Page
+
+
+Update Case Input - Name of the case - Page
+Update Employee Input - Name of the Employee - Page
+Upload the case final output - Page
+
+
+
+
+2 Batch only for the client
+no limitation for employees
+Remove 2
+Case updated

@@ -1,0 +1,240 @@
+/*============ INCLUDE FONTS ============================*/
+@font-face {
+    font-family: sans-serif;
+}
+/*======================= GENERAL COLORS USED ==========================================*/
+.white {
+    color: #FFF
+}
+.blue {
+    color: #3498DB
+}
+.purple {
+    color: #9B59B6
+}
+.green {
+    color: #1ABB9C
+}
+.aero {
+    color: #9CC2CB
+}
+.red {
+    color: #E74C3C
+}
+.dark {
+    color: #34495E
+}
+.orange {
+    color: #F39C12;
+}
+.border-silver {
+    border-color: #DDD !important
+}
+.border-blue {
+    border-color: #3498DB !important
+}
+.border-purple {
+    border-color: #9B59B6 !important
+}
+.border-green {
+    border-color: #1ABB9C !important
+}
+.border-aero {
+    border-color: #9CC2CB !important
+}
+.border-red {
+    border-color: #E74C3C !important
+}
+.border-dark {
+    border-color: #34495E !important
+}
+
+.bg-white {
+    background: #fff !important;
+    border: 1px solid #fff !important;
+    color: #73879C
+}
+.bg-green {
+    background: #1ABB9C !important;
+    border: 1px solid #1ABB9C !important;
+    color: #fff
+}
+.bg-red {
+    background: #E74C3C !important;
+    border: 1px solid #E74C3C !important;
+    color: #fff
+}
+.bg-blue {
+    background: #3498DB !important;
+    border: 1px solid #3498DB !important;
+    color: #fff
+}
+.bg-orange {
+    background: #F39C12 !important;
+    border: 1px solid #F39C12 !important;
+    color: #fff
+}
+.bg-purple {
+    background: #9B59B6 !important;
+    border: 1px solid #9B59B6 !important;
+    color: #fff
+}
+.bg-blue-sky {
+    background: #50C1CF !important;
+    border: 1px solid #50C1CF !important;
+    color: #fff
+}
+.progress-bar-dark {
+    background-color: #34495E !important
+}
+.progress-bar-gray {
+    background-color: #BDC3C7 !important
+}
+
+/*============= GENERAL RULES ==============================*/
+
+.logo_text{
+    font-family: sans-serif;
+}
+.admin_login_box .btn-primary{
+	border-style: solid;
+    border-width: 2px;
+    background-image: -webkit-linear-gradient(top,#337ab7 0,#265a88 100%);
+    background-image: -o-linear-gradient(top,#337ab7 0,#265a88 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#265a88));
+    background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #ffffff;
+}
+.affiliate_login_body {
+min-height:100vh;
+}
+/*========== LOGIN PAGE AFFILIATE ============================================*/
+.login-form-logo {
+    /*font-size: 60px;*/
+    color: #333333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: transparent;
+}
+.login-form-logo img {
+    /*border-radius: 50%;*/
+}
+.login-form-title {
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+.affiliate_login_div {
+background: -moz-linear-gradient(top, #7579ff, #b224ef);
+background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+background: -o-linear-gradient(top, #7579ff, #b224ef);
+}
+.affiliate_login_div .nav-tabs > li > a:hover {
+    border:transparent;
+    background:transparent;
+}
+.affiliate_login_div .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+background:transparent;
+color:#FFF;
+}
+
+.form-btn {
+    border-radius: 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+@media screen and (min-width: 768px) {
+   .affiliate_login_img img {
+    height:100vh;
+   }
+   .affiliate_login_div{
+    height:100vh;
+   }
+}
+
+.form-group label {
+    font-family: Poppins-Regular;
+    color: #fff;
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+
+.form-group input {
+    border-radius:0px;
+    background: transparent;
+    color:#FFF;
+}
+
+.login-switch,.signup-switch {
+    cursor: pointer;
+}
+
+/*-------------------------- CUSTOM TOAST -------------------------------------*/
+#custom_toast {
+    visibility: hidden;
+    width: 300px;
+    /*margin-left: -125px;*/
+    /*width: 25%;
+    margin-left: 50%;*/
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 12px;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    bottom: 30px;
+    font-size: 1em;
+    font-weight: 100;
+    transform: translate(-50%, 0%);
+}
+
+#custom_toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 1s 3s;
+    animation: fadein 0.5s, fadeout 1s 3s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}

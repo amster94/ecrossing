@@ -1,0 +1,667 @@
+/*============================= VERIFY ACCCOUNT ===================================*/
+.verify-account-div .verify-btn {
+border-radius : 25px;
+}
+/*======================= GENERAL COLORS USED ==========================================*/
+.white {
+    color: #FFF
+}
+.blue {
+    color: #3498DB
+}
+.purple {
+    color: #9B59B6
+}
+.green {
+    color: #1ABB9C
+}
+.aero {
+    color: #9CC2CB
+}
+.red {
+    color: #E74C3C
+}
+.dark {
+    color: #34495E
+}
+.orange {
+    color: #F39C12;
+}
+.border-silver {
+    border-color: #DDD !important
+}
+.border-blue {
+    border-color: #3498DB !important
+}
+.border-purple {
+    border-color: #9B59B6 !important
+}
+.border-green {
+    border-color: #1ABB9C !important
+}
+.border-aero {
+    border-color: #9CC2CB !important
+}
+.border-red {
+    border-color: #E74C3C !important
+}
+.border-dark {
+    border-color: #34495E !important
+}
+
+.bg-white {
+    background: #fff !important;
+    border: 1px solid #fff !important;
+    color: #73879C
+}
+.bg-green {
+    background: #1ABB9C !important;
+    border: 1px solid #1ABB9C !important;
+    color: #fff
+}
+.bg-red {
+    background: #E74C3C !important;
+    border: 1px solid #E74C3C !important;
+    color: #fff
+}
+.bg-blue {
+    background: #3498DB !important;
+    border: 1px solid #3498DB !important;
+    color: #fff
+}
+.bg-orange {
+    background: #F39C12 !important;
+    border: 1px solid #F39C12 !important;
+    color: #fff
+}
+.bg-purple {
+    background: #9B59B6 !important;
+    border: 1px solid #9B59B6 !important;
+    color: #fff
+}
+.bg-blue-sky {
+    background: #50C1CF !important;
+    border: 1px solid #50C1CF !important;
+    color: #fff
+}
+.progress-bar-dark {
+    background-color: #34495E !important
+}
+.progress-bar-gray {
+    background-color: #BDC3C7 !important
+}
+
+/*-------------------------- CUSTOM TOAST -------------------------------------*/
+#custom_toast {
+    visibility: hidden;
+    width: 300px;
+    /*margin-left: -125px;*/
+    /*width: 25%;
+    margin-left: 50%;*/
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 12px;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    bottom: 30px;
+    font-size: 1em;
+    font-weight: 100;
+    transform: translate(-50%, 0%);
+}
+
+#custom_toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 1s 3s;
+    animation: fadein 0.5s, fadeout 1s 3s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+/*------------------------------- CUSTOM FILE  UPLOAD -----------------------------------------------------*/
+
+  .file-upload {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #ccc
+  }
+
+  .file-upload-wrapper .card.card-body.has-error .file-upload-message .file-upload-error,
+  .file-upload-wrapper .card.card-body.has-preview .btn.btn-sm.btn-danger {
+    display: block
+  }
+
+  .file-upload i {
+    font-size: 3rem;
+  }
+
+  .file-upload .fa-5 {
+    font-size: 5rem;
+  }
+
+  .file-upload .mask.rgba-stylish-slight {
+    opacity: 0;
+    -webkit-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear
+  }
+
+  .file-upload:hover .mask.rgba-stylish-slight {
+    opacity: .8
+  }
+
+  .file-upload-wrapper .card.card-body.has-error {
+    border-color: #f34141
+  }
+
+  .file-upload-wrapper .card.card-body.has-error:hover .file-upload-errors-container {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s
+  }
+
+  .file-upload-wrapper .card.card-body.disabled input {
+    cursor: not-allowed
+  }
+
+  .file-upload-wrapper .card.card-body.disabled:hover {
+    background-image: none;
+    -webkit-animation: none;
+    animation: none
+  }
+
+  .file-upload-wrapper .card.card-body.disabled .file-upload-message {
+    opacity: .5;
+    text-decoration: line-through
+  }
+
+  .file-upload-wrapper .card.card-body.disabled .file-upload-infos-message {
+    display: none
+  }
+
+  .file-upload-wrapper .card.card-body input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-message {
+    position: relative;
+    top: 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-message span.file-icon {
+    font-size: 50px;
+    color: #ccc
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-message p {
+    margin: 5px 0 0
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-message p.file-upload-error {
+    color: #f34141;
+    font-weight: 700;
+    display: none
+  }
+
+  .file-upload-wrapper .card.card-body .btn.btn-sm.btn-danger {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 7;
+    top: 10px;
+    right: 10px;
+    -webkit-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-preview {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-preview .file-upload-render .file-upload-preview-img {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    -webkit-transition: border-color .15s linear;
+    -o-transition: border-color .15s linear;
+    transition: border-color .15s linear;
+    -o-object-fit: cover;
+    object-fit: cover
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-preview .file-upload-render i {
+    font-size: 80px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #777
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-preview .file-upload-render .file-upload-extension {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -.03em;
+    font-size: 1rem;
+    color: #fff;
+    width: 42px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-preview .file-upload-infos {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-preview .file-upload-infos .file-upload-infos-inner {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -40%);
+    -ms-transform: translate(0, -40%);
+    transform: translate(0, -40%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    padding: 0 20px;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-preview .file-upload-infos .file-upload-infos-inner p {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 700
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-preview .file-upload-infos .file-upload-infos-inner p.file-upload-infos-message {
+    margin-top: 15px;
+    padding-top: 15px;
+    font-size: 12px;
+    position: relative;
+    opacity: .5
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-preview .file-upload-infos .file-upload-infos-inner p.file-upload-infos-message::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background: #fff;
+    width: 30px;
+    height: 2px
+  }
+
+  .file-upload-wrapper .card.card-body:hover .btn.btn-sm.btn-danger,
+  .file-upload-wrapper .card.card-body:hover .file-upload-preview .file-upload-infos {
+    opacity: 1
+  }
+
+  .file-upload-wrapper .card.card-body:hover .file-upload-preview .file-upload-infos .file-upload-infos-inner {
+    margin-top: -5px
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback {
+    height: auto !important
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback:hover {
+    background-image: none;
+    -webkit-animation: none;
+    animation: none
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview {
+    position: relative;
+    padding: 0
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-render {
+    display: block;
+    position: relative
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-infos .file-upload-infos-inner p.file-upload-infos-message::before,
+  .file-upload-wrapper .card.card-body.touch-fallback.has-preview .file-upload-message {
+    display: none
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-render .file-upload-font-file {
+    position: relative;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 0;
+    left: 0
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-render .file-upload-font-file::before {
+    margin-top: 30px;
+    margin-bottom: 30px
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-render img {
+    position: relative;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-infos {
+    position: relative;
+    opacity: 1;
+    background: 0 0
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-infos .file-upload-infos-inner {
+    position: relative;
+    top: 0;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    padding: 5px 90px 5px 0
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-infos .file-upload-infos-inner p {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #777;
+    text-align: left;
+    line-height: 25px
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-infos .file-upload-infos-inner p.file-upload-infos-message {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 18px;
+    position: relative;
+    opacity: 1
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .file-upload-message {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    padding: 40px 0
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback .btn.btn-sm.btn-danger {
+    top: auto;
+    bottom: 23px;
+    opacity: 1
+  }
+
+  .file-upload-wrapper .card.card-body.touch-fallback:hover .file-upload-preview .file-upload-infos .file-upload-infos-inner {
+    margin-top: 5rem
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-loader {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+    z-index: 9
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-loader::after {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: rotate .6s linear infinite;
+    animation: rotate .6s linear infinite;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #777;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #777;
+    content: ""
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-errors-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background: rgba(243, 65, 65, .8);
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s linear .15s, opacity .15s linear;
+    -o-transition: visibility 0s linear .15s, opacity .15s linear;
+    transition: visibility 0s linear .15s, opacity .15s linear
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-errors-container ul {
+    padding: 10px 20px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-errors-container ul li {
+    margin-left: 20px;
+    color: #fff;
+    font-weight: 700
+  }
+
+  .file-upload-wrapper .card.card-body .file-upload-errors-container.visible {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s
+  }
+
+  .file-upload-wrapper .card.card-body~.file-upload-errors-container ul {
+    padding: 0;
+    margin: 15px 0
+  }
+
+  .file-upload-wrapper .card.card-body~.file-upload-errors-container ul li {
+    margin-left: 20px;
+    color: #f34141;
+    font-weight: 700
+  }
+
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotateZ(-360deg);
+      transform: rotateZ(-360deg)
+    }
+
+    100% {
+      -webkit-transform: rotateZ(0);
+      transform: rotateZ(0)
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotateZ(-360deg);
+      transform: rotateZ(-360deg)
+    }
+
+    100% {
+      -webkit-transform: rotateZ(0);
+      transform: rotateZ(0)
+    }
+  }
+
+
+/* ------------------------------- CUSTOM UPLOADED FILE LIST SHOWER ------------------------- */
+
+.uploaded_file_list li{
+  /*padding-left: 2%;*/
+  margin-top: 1%;
+  background: #3a3535;
+  color: #fff;
+  padding: 2%;
+}
+.uploaded_file_list li .success_file{
+    color: #00FF00;
+    float: right;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #3a3535;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    line-height: 15px;
+  }
+.uploaded_file_list li .success_file:hover{
+  color: #fff;
+  /*background-color: #000;*/
+}
+.uploaded_file_list li p{
+  margin: 0px;
+}
+
+
+/* ---------------------------------- NEWSFEED BOX --------------------------------------- */
+.newsfeed {
+  border : 1px solid #DDD;
+  height: 400px;
+  overflow-y: auto;
+}
+.alert {
+  padding: 20px;
+  color: white;
+  opacity: 0.83;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 1em;
+  line-height: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

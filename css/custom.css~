@@ -1,0 +1,4 @@
+/*============================= VERIFY ACCCOUNT ===================================*/
+.verify-account-div .verify-btn {
+border-radius : 25%;
+}
